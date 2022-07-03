@@ -1,5 +1,5 @@
 ### Calculator
-- A simple CLI app that will allow you to take a quiz using NodeJS. It will ask your name, and will ask you to answer different questions with its corresponding choices. The questions and answer can be directly modify in the `src/index.js` file.
+- A basic calculator that will allow you to do arithmetic operations.
 - Website: https://calculator.kenttonino.vercel.app/
 
 ### Technologies | Packages
