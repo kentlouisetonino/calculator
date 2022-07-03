@@ -6,6 +6,8 @@ type Props = {
   width?: number
   height?: number
   type?: ButtonType
+  onClick?: any
+  disabled?: boolean
 }
 
 export default Props

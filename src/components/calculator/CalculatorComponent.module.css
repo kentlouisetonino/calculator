@@ -10,12 +10,17 @@
 }
 
 .containerDisplay {
+  overflow: auto;
+  overflow-y: hidden;
   background: white;
   color: black;
   border-radius: 8px;
   text-align: right;
   font-size: 48px;
   grid-column-end: span 4;
-  padding: 30px 24px;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  padding: 0 10px;
 }
