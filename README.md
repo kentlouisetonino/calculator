@@ -1,4 +1,4 @@
-### Calculator
+### Description
 - A basic calculator that will allow you to do arithmetic operations.
 - Link: https://calculator.kenttonino.vercel.app/
 
