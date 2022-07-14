@@ -2,6 +2,7 @@
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
+  "author": "Kent Louise Tonino",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
