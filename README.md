@@ -4,7 +4,7 @@
 
 ### Technologies | Packages
 - Frontend: ReactJS, NextJS, TypeScript
-- Others: Git, Bash, Github, Github Actions, Vercel
+- Others: Github Actions, Vercel
 
 ### Setup
 1. Run the following commands.
