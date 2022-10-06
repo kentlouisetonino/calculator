@@ -1,5 +1,5 @@
 ## Description:
-- A basic calculator that will allow you to do arithmetic operations.
+- A basic Calculator that will allow you to do arithmetic operations.
 
 <br />
 
