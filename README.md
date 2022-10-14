@@ -6,8 +6,8 @@
 <br />
 
 ## Technology Stack
-> _**Frontend** : ReactJS • NextJS • TypeScript_
-- _**Others** : Github Actions • Vercel_
+> _**Frontend** : ReactJS • NextJS • TypeScript_ <br />
+> _**Others** : Github Actions • Vercel_
 
 <br />
 
