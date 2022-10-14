@@ -1,17 +1,25 @@
 ## Description
-- _A basic Calculator that will allow you to do arithmetic operations._
+> _A basic Calculator that will allow you to do arithmetic operations._
 
-## Technology
-- _Frontend: ReactJS, NextJS, TypeScript_
-- _Others: Github Actions, Vercel_
+> _**Link** : [Web Application](https://calculator.kentlouisetonino.vercel.app/)_
+
+<br />
+
+## Technology Stack
+> _**Frontend** : ReactJS • NextJS • TypeScript_
+- _**Others** : Github Actions • Vercel_
+
+<br />
 
 ## Setup
-- _Run the following commands._
+> - _Run the following commands._
 ```bash
 git clone https://github.com/kenttonino/calculator.git
 npm install
 npm run dev
 ```
+
+<br />
 
 ## Recording
 https://user-images.githubusercontent.com/69438999/177045896-11f83eb5-d04b-481d-9e52-03b2adc92d86.mp4
