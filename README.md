@@ -6,7 +6,7 @@
 <br />
 
 ## Technology Stack
-> _ReactJS • NextJS • TypeScript_ <br />
+> _ReactJS • NextJS • TypeScript • Github Actions Workflow • Vercel_ <br />
 
 <br />
 
