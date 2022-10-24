@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-import styles from './CalculatorComponent.module.css'
-import ButtonComponent from '../button/ButtonComponent'
-import ButtonType from '../button/types/ButtonType'
-import ArithmeticSymbols from '../../consts/arithmetic-symbols'
+import { ArithmeticSymbols } from '../../consts/arithmetic-symbols'
 import calculate from '../../helpers/calculate'
+import ButtonComponent from '../button'
+import { ButtonType } from '../button/ButtonType'
+import styles from './index.module.css'
 
-const CalculatorComponent: React.FC = () => {
+export default function Calculator() {
   const [display, setDisplay] = useState<string>('')
   const [hasOperation, setHasOperation] = useState<boolean>(false)
   const [currentOperation, setCurrentOperation] = useState<string>('')
 
-  const onClear = () => {
+  function onClear() {
     setDisplay('')
     setHasOperation(false)
   }
 
-  const onDelete = () => {
+  function onDelete() {
     const lastCharacter = display.slice(-1)
 
     if (ArithmeticSymbols.includes(lastCharacter)) {
@@ -28,17 +28,17 @@ const CalculatorComponent: React.FC = () => {
     }
   }
 
-  const onClickNumber = (value: string) => {
+  function onClickNumber(value: string) {
     setDisplay(display + value)
   }
 
-  const onClickOperation = (operation: string) => {
+  function onClickOperation(operation: string) {
     setDisplay(display + operation)
     setCurrentOperation(operation)
     setHasOperation(true)
   }
 
-  const onCalculate = () => {
+  function onCalculate() {
     calculate(
       display,
       currentOperation,
@@ -61,38 +61,38 @@ const CalculatorComponent: React.FC = () => {
         {/* Operations */}
         <ButtonComponent
           onClick={() => onClear()}
-          label='CLEAR'
+          label="CLEAR"
           position={[0, 1]}
           width={2}
         />
         <ButtonComponent
           onClick={() => onDelete()}
-          label='DEL'
+          label="DEL"
           position={[2, 1]}
           width={2}
         />
         <ButtonComponent
           disabled={hasOperation ? true : false}
           onClick={() => onClickOperation('/')}
-          label='/'
+          label="/"
           position={[3, 2]}
         />
         <ButtonComponent
           disabled={hasOperation ? true : false}
           onClick={() => onClickOperation('x')}
-          label='x'
+          label="x"
           position={[3, 3]}
         />
         <ButtonComponent
           disabled={hasOperation ? true : false}
           onClick={() => onClickOperation('-')}
-          label='-'
+          label="-"
           position={[3, 4]}
         />
         <ButtonComponent
           disabled={hasOperation ? true : false}
           onClick={() => onClickOperation('+')}
-          label='+'
+          label="+"
           position={[3, 5]}
         />
 
@@ -100,68 +100,68 @@ const CalculatorComponent: React.FC = () => {
         <ButtonComponent
           onClick={() => onClickNumber('9')}
           type={ButtonType.Number}
-          label='9'
+          label="9"
           position={[2, 2]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('8')}
           type={ButtonType.Number}
-          label='8'
+          label="8"
           position={[1, 2]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('7')}
           type={ButtonType.Number}
-          label='7'
+          label="7"
           position={[0, 2]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('6')}
           type={ButtonType.Number}
-          label='6'
+          label="6"
           position={[2, 3]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('5')}
           type={ButtonType.Number}
-          label='5'
+          label="5"
           position={[1, 3]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('4')}
           type={ButtonType.Number}
-          label='4'
+          label="4"
           position={[0, 3]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('3')}
           type={ButtonType.Number}
-          label='3'
+          label="3"
           position={[2, 4]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('2')}
           type={ButtonType.Number}
-          label='2'
+          label="2"
           position={[1, 4]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('1')}
           type={ButtonType.Number}
-          label='1'
+          label="1"
           position={[0, 4]}
         />
         <ButtonComponent
           onClick={() => onClickNumber('0')}
           type={ButtonType.Number}
-          label='0'
+          label="0"
           position={[0, 5]}
           width={2}
         />
         <ButtonComponent
           onClick={() => onCalculate()}
           type={ButtonType.Number}
-          label='='
+          label="="
           position={[2, 5]}
           width={1}
         />
@@ -169,5 +169,3 @@ const CalculatorComponent: React.FC = () => {
     </div>
   )
 }
-
-export default CalculatorComponent
