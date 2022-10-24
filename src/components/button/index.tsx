@@ -1,10 +1,23 @@
 import React from 'react'
 
-import styles from './ButtonComponent.module.css'
-import ButtonProps from './types/ButtonProps'
-import ButtonType from './types/ButtonType'
+import styles from './index.module.css'
 
-const ButtonComponent: React.FC<ButtonProps> = ({
+enum ButtonType {
+  Number,
+  Operation,
+}
+
+interface Props {
+  label: string
+  position?: [x: number, y: number]
+  width?: number
+  height?: number
+  type?: ButtonType
+  onClick?: any
+  disabled?: boolean
+}
+
+export default function Button({
   label,
   position,
   width,
@@ -12,7 +25,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
   type = ButtonType.Operation,
   onClick,
   disabled = false,
-}) => {
+}: Props) {
   const style: React.CSSProperties = {}
 
   // This will manage the x and y position of the buttons.
@@ -42,5 +55,3 @@ const ButtonComponent: React.FC<ButtonProps> = ({
     </button>
   )
 }
-
-export default ButtonComponent

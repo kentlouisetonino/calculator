@@ -1,3 +1,1 @@
-const ArithmeticSymbols = ['+', '-', 'x', '/']
-
-export default ArithmeticSymbols
+export const ArithmeticSymbols = ['+', '-', 'x', '/']

@@ -1,15 +1,15 @@
-import ArithmeticSymbols from '../consts/arithmetic-symbols'
+import { ArithmeticSymbols } from '../consts/arithmetic-symbols'
 
 /**
  * This will calculate the two numbers based on the arithmetic operation used.
  */
-const calculate = (
+export default function calculate(
   display: string,
   currentOperation: string,
   setDisplay: any,
   setHasOperation: any,
   setCurrentOperation: any
-) => {
+) {
   const num1 = display.substring(0, display.indexOf(currentOperation))
   const num2 = display.substring(display.indexOf(currentOperation) + 1)
 
@@ -38,5 +38,3 @@ const calculate = (
       break
   }
 }
-
-export default calculate
