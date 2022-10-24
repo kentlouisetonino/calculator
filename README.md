@@ -1,5 +1,5 @@
 ## Description
-> _A basic Calculator that will allow you to do arithmetic operations._
+> _A basic Calculator Web Application that will allow you to do arithmetic operations._
 
 > _**Link** : [Web Application](https://calculator.kentlouisetonino.vercel.app/)_
 
