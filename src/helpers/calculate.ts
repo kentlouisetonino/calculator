@@ -1,3 +1,5 @@
+import { Dispatch } from 'react'
+
 import { ArithmeticSymbols } from '../consts/arithmetic-symbols'
 
 /**
@@ -6,9 +8,9 @@ import { ArithmeticSymbols } from '../consts/arithmetic-symbols'
 export default function calculate(
   display: string,
   currentOperation: string,
-  setDisplay: any,
-  setHasOperation: any,
-  setCurrentOperation: any
+  setDisplay: Dispatch<string>,
+  setHasOperation: Dispatch<boolean>,
+  setCurrentOperation: Dispatch<string>
 ) {
   const num1 = display.substring(0, display.indexOf(currentOperation))
   const num2 = display.substring(display.indexOf(currentOperation) + 1)

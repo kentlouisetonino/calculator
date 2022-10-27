@@ -1,4 +1,4 @@
-import React from 'react'
+import { ReactNode } from 'react'
 
 import styles from './index.module.css'
 
@@ -8,23 +8,23 @@ enum ButtonType {
 }
 
 interface Props {
-  label: string
-  position?: [x: number, y: number]
   width?: number
   height?: number
   type?: ButtonType
-  onClick?: any
   disabled?: boolean
+  children: ReactNode
+  position?: [x: number, y: number]
+  onClick?: () => void
 }
 
 export default function Button({
-  label,
   position,
   width,
   height,
+  children,
+  disabled = false,
   type = ButtonType.Operation,
   onClick,
-  disabled = false,
 }: Props) {
   const style: React.CSSProperties = {}
 
@@ -42,16 +42,16 @@ export default function Button({
 
   return (
     <button
-      disabled={disabled}
-      onClick={onClick}
       style={style}
+      disabled={disabled}
       className={`${
         type === ButtonType.Number
           ? styles.buttonNumber
           : styles.buttonOperation
       }`}
+      onClick={onClick}
     >
-      {label}
+      {children}
     </button>
   )
 }
