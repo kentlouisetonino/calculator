@@ -1,9 +1,13 @@
 import Head from 'next/head'
 
-export default function Header(props: any) {
+interface Props {
+  title: string
+}
+
+export default function Header({ title }: Props) {
   return (
     <Head>
-      <title>{props.title}</title>
+      <title>{title}</title>
       <link rel="icon" href="/head.ico"></link>
       <meta
         name="viewport"
