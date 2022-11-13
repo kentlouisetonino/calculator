@@ -6,7 +6,7 @@
 <br />
 
 ## Technology Stack
-> ReactJS • NextJS • TypeScript • Github Actions Workflow • Vercel
+> [ReactJS](https://reactjs.org/) • [NextJS](https://www.npmjs.com/package/next) • [TypeScript](https://www.npmjs.com/package/typescript) • [Github Actions Workflow](https://docs.github.com/en/actions/using-workflows) • [Vercel](https://vercel.com/)
 
 <br />
 
