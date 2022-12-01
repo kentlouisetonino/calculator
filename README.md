@@ -1,5 +1,5 @@
 ## Description
-> A Client-Side application that will allow you to do arithmetic operations.
+> A computer program application that will allow you to do arithmetic operations.
 
 > **Link** : [Web Application](https://calculator.kentlouisetonino.vercel.app/)
 
