@@ -15,6 +15,7 @@ https://user-images.githubusercontent.com/69438999/177045896-11f83eb5-d04b-481d-
 ## Setup Guide
 > - Run the following commands.
 ```bash
-npm install
-npm run dev
+yarn install
+yarn build
+yarn dev
 ```
