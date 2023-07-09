@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "vercel:production": "vercel deploy --prod"
   },
   "dependencies": {
     "@types/node": "^20.4.1",
