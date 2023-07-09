@@ -7,7 +7,7 @@ import styles from './index.module.css'
 export default function Home() {
   return (
     <Fragment>
-      <HeadComponent title="Calculator" />
+      <HeadComponent title="Web Calculator" />
       <div className={`${styles.containerOne}`}>
         <CalculatorComponent />
       </div>
