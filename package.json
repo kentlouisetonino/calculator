@@ -11,15 +11,15 @@
     "vercel:production": "vercel deploy --prod"
   },
   "dependencies": {
-    "@types/node": "^20.4.1",
+    "@types/node": "^20.4.2",
     "@types/prettier": "^2.6.3",
     "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
+    "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "eslint": "^8.44.0",
     "eslint-config-next": "^13.4.9",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "next": "13.4.9",
     "prettier": "^3.0.0",
     "react": "18.2.0",
