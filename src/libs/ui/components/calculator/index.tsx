@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-
-import { ArithmeticSymbols } from '../../consts/arithmetic-symbols'
-import calculate from '../../helpers/calculate'
+import { ArithmeticSymbols } from '../../../services/consts/arithmetic-symbols'
+import calculate from '../../../services/helpers/calculate'
 import Button from '../button'
 import { ButtonType } from '../button/types'
 import styles from './index.module.css'

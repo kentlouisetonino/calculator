@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-
 import styles from './index.module.css'
 
 enum ButtonType {
