@@ -1,5 +1,5 @@
 import Landing from '../libs/ui/Landing/Home'
 
-export default function AppPage() {
+export default function Page() {
   return <Landing />
 }

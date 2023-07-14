@@ -1,3 +1,4 @@
+'use client'
 import { Fragment } from 'react'
 import Calculator from '../Calculator/Calculator'
 import Header from '../Header/Header'
