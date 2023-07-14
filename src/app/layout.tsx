@@ -3,7 +3,7 @@ import '../../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Web Calculator',
-  icons: 'head.ico',
+  icons: '/head.ico',
 }
 
 export default function RootLayout({
