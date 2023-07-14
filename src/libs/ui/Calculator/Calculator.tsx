@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { ArithmeticSymbols } from '../../../services/consts/arithmetic-symbols'
-import calculate from '../../../services/helpers/calculate'
-import Button from '../button'
-import { ButtonType } from '../button/types'
+import CalculatorService from '../../services/CalculatorService'
+import { ArithmeticSymbols } from '../../services/types'
+import Button from '../Button/Button'
+import { ButtonType } from '../Button/types'
 import styles from './index.module.css'
 
 export default function Calculator() {
@@ -38,7 +38,7 @@ export default function Calculator() {
   }
 
   function onCalculate() {
-    calculate(
+    CalculatorService.calculate(
       display,
       currentOperation,
       setDisplay,

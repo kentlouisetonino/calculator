@@ -1,10 +1,6 @@
 import { ReactNode } from 'react'
 import styles from './index.module.css'
-
-enum ButtonType {
-  Number,
-  Operation,
-}
+import { ButtonType } from './types'
 
 interface Props {
   width?: number
