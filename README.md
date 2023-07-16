@@ -1,5 +1,5 @@
 ## Description
-> - A client-side application that will allow you to do arithmetic operations. The main
+> - A frontend application that will allow you to do arithmetic operations. The main
     technology stack are ReactJS, NextJS, TypeScript, and Vercel.
 
 <br />
