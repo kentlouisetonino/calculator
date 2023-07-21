@@ -1,6 +1,6 @@
 ## Description
 > - A simple frontend application that will allow you to do arithmetic operations. The main
-    technology stack are ReactJS, NextJS, TypeScript, and Vercel.
+    technology stack are Tailwind CSS, ReactJS, NextJS, TypeScript, and Vercel.
 
 <br />
 
