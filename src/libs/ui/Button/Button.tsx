@@ -1,5 +1,5 @@
+import classNames from 'classnames'
 import { ReactNode } from 'react'
-import styles from './index.module.css'
 import { ButtonType } from './types'
 
 interface Props {
@@ -39,11 +39,12 @@ export default function Button({
     <button
       style={style}
       disabled={disabled}
-      className={`${
-        type === ButtonType.Number
-          ? styles.buttonNumber
-          : styles.buttonOperation
-      }`}
+      className={classNames({
+        'bg-white rounded-lg border-0 text-lg text-black hover:bg-orange-500 hover:text-white':
+          type === ButtonType.Number,
+        'bg-gray-500 rounded-lg border-0 text-lg text-white hover:bg-orange-500':
+          type === ButtonType.Operation,
+      })}
       onClick={onClick}
     >
       {children}
