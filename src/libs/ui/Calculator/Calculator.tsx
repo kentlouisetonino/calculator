@@ -3,7 +3,6 @@ import CalculatorService from '../../services/CalculatorService'
 import { ArithmeticSymbols } from '../../services/types'
 import Button from '../Button/Button'
 import { ButtonType } from '../Button/types'
-import styles from './index.module.css'
 
 export default function Calculator() {
   const [display, setDisplay] = useState<string>('')
@@ -52,12 +51,23 @@ export default function Calculator() {
   }, [display])
 
   return (
-    <div className={`${styles.containerOne}`}>
-      <div className={`${styles.containerGrid}`}>
-        {/* Display */}
-        <div className={`${styles.containerDisplay}`}>{display}</div>
+    <div className="text-white">
+      <div
+        style={{
+          gridTemplateColumns: 'repeat(4, 80px)',
+          gridTemplateRows: '120px repeat(5, 80px)',
+        }}
+        className="grid gap-2.5"
+      >
+        <div
+          style={{
+            gridColumnEnd: 'span 4',
+          }}
+          className="overflow-auto overflow-y-hidden bg-white text-black rounded-lg text-right text-5xl font-bold flex justify-end items-center px-2.5"
+        >
+          {display}
+        </div>
 
-        {/* Operations */}
         <Button position={[0, 1]} width={2} onClick={() => onClear()}>
           CLEAR
         </Button>
